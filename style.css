@@ -1,0 +1,237 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for section spacing */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Section */
+header {
+    background: #4CAF50; /* Green background */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid white;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* About Section Styling */
+#about p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#about {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Education Section */
+#education ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#education li {
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: #e0f7fa;
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#education li:hover {
+    background-color: #b2ebf2;
+}
+
+#education .container {
+    max-width: 800px;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills li:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Computer Languages Section */
+#languages ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#languages li {
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#languages li:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Workshops Section */
+#projects ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#projects li {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#projects li:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.projects .container {
+    max-width: 800px;
+}
+
+/* Contact Section */
+.contact {
+    background: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.contact p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills li, .languages li {
+        width: 45%;
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills li, .languages li {
+        width: 90%;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
